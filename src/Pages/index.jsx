@@ -6,7 +6,7 @@ import linkedinIcon from "../IMG/icons/linkedin.svg";
 import arrowIcon from "../IMG/icons/arrow.svg";
 import skyImg from "../IMG/sky.jpeg";
 import coolbeansImg from "../IMG/coolbeans.png";
-import todoImg from "../IMG/todo.png";
+import todoImg from "../IMG/Todo.png";
 import webshopImg from "../IMG/Webshop.png";
 
 const Index = () => {
