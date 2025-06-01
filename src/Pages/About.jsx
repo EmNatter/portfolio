@@ -1,10 +1,26 @@
+import meImg from "../IMG/me.jpeg";
+import photoshopIcon from "../IMG/icons/photoshop.png";
+import bridgeIcon from "../IMG/icons/bridge.png";
+import figmaIcon from "../IMG/icons/figma.svg";
+import miroIcon from "../IMG/icons/miro.svg";
+import githubIcon from "../IMG/icons/github.svg";
+import slackIcon from "../IMG/icons/slack.svg";
+import vscIcon from "../IMG/icons/vsc.png";
+import reactIcon from "../IMG/icons/react.svg";
+import javascriptIcon from "../IMG/icons/javascript.svg";
+import html5Icon from "../IMG/icons/html5.svg";
+import css3Icon from "../IMG/icons/css3.svg";
+import chefHatIcon from "../IMG/icons/chef-hat.png";
+import filmIcon from "../IMG/icons/film.png";
+import paletteIcon from "../IMG/icons/palette.png";
+import treesIcon from "../IMG/icons/trees.png";
 const About = () => {
   return (
     <div>
       <main id="about_main">
         <section className="about">
           <div className="about_wrapper">
-            <img src="src/IMG/me.jpeg" alt="me" />
+            <img src={meImg} alt="me" />
             <h2>"Hej, jag är Emilia Nätter"</h2>
             <p>
               Jag är målmedveten, driven och strukturerad person med en estetisk
@@ -18,25 +34,25 @@ const About = () => {
               <div className="about_competence_buttons_wrapper">
                 <article>
                   <h3>Designverktyg</h3>
-                  <img src="src/IMG/icons/photoshop.png" alt="sky" />
-                  <img src="src/IMG/icons/bridge.png" alt="sky" />
-                  <img src="src/IMG/icons/figma.svg" alt="sky" />
-                  <img src="src/IMG/icons/miro.svg" alt="sky" />
+                  <img src={photoshopIcon} alt="Photoshop" />
+                  <img src={bridgeIcon} alt="Bridge" />
+                  <img src={figmaIcon} alt="Figma" />
+                  <img src={miroIcon} alt="Miro" />
                 </article>
 
                 <article>
                   <h3>Verktyg och samarbete</h3>
-                  <img src="src/IMG/icons/github.svg" alt="sky" />
-                  <img src="src/IMG/icons/slack.svg" alt="sky" />
-                  <img src="src/IMG/icons/vsc.png" alt="sky" />
+                  <img src={githubIcon} alt="GitHub" />
+                  <img src={slackIcon} alt="Slack" />
+                  <img src={vscIcon} alt="Visual Studio Code" />
                 </article>
 
                 <article>
                   <h3>Webbutveckling</h3>
-                  <img src="src/IMG/icons/react.svg" alt="sky" />
-                  <img src="src/IMG/icons/javascript.svg" alt="sky" />
-                  <img src="src/IMG/icons/html5.svg" alt="sky" />
-                  <img src="src/IMG/icons/css3.svg" alt="sky" />
+                  <img src={reactIcon} alt="React" />
+                  <img src={javascriptIcon} alt="JavaScript" />
+                  <img src={html5Icon} alt="HTML5" />
+                  <img src={css3Icon} alt="CSS3" />
                 </article>
               </div>
             </div>
@@ -136,7 +152,7 @@ const About = () => {
 
           <div class="fact_wrapper">
             <article>
-              <img src="src/IMG/icons/chef-hat.png" alt="chef-hat" />
+              <img src={chefHatIcon} alt="Chef hat" />
               <h3>Amatörkock</h3>
               <p>
                 På fritiden älskar jag att umgås med familj och vänner genom att
@@ -148,7 +164,7 @@ const About = () => {
             </article>
 
             <article>
-              <img src="src/IMG/icons/film.png" alt="film" />
+              <img src={filmIcon} alt="Film" />
               <h3>Filmnörd</h3>
               <p>
                 Jag älskar att koppla av med en riktigt bra film eller längta
@@ -158,7 +174,7 @@ const About = () => {
             </article>
 
             <article>
-              <img src="src/IMG/icons/palette.png" alt="palette" />
+              <img src={paletteIcon} alt="Palette" />
               <h3>Estet</h3>
               <p>
                 Jag är lite extra passionerad för allt som har med färg och form
@@ -171,7 +187,7 @@ const About = () => {
             </article>
 
             <article>
-              <img src="src/IMG/icons/trees.png" alt="trees" />
+              <img src={treesIcon} alt="Trees" />
               <h3> Hobbyfotograf</h3>
               <p>
                 Jag fotograferar helst landskap och endel stadsmiljöer, särskilt

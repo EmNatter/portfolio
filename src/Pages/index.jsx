@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
+import githubIcon from "../IMG/icons/github.svg";
+import instagramIcon from "../IMG/icons/instagram.svg";
+import linkedinIcon from "../IMG/icons/linkedin.svg";
+import arrowIcon from "../IMG/icons/arrow.svg";
+import skyImg from "../IMG/sky.jpeg";
+import coolbeansImg from "../IMG/coolbeans.png";
+import todoImg from "../IMG/todo.png";
+import webshopImg from "../IMG/Webshop.png";
 
 const Index = () => {
   const wrapperRef = useRef();
@@ -69,7 +77,7 @@ const Index = () => {
                     className="social-link"
                   >
                     <div className="icon">
-                      <img src="src/IMG/icons/github.svg" alt="GitHub" />
+                      <img src={githubIcon} alt="GitHub" />
                     </div>
                   </a>
                 </li>
@@ -81,7 +89,7 @@ const Index = () => {
                     className="social-link"
                   >
                     <div className="icon">
-                      <img src="src/IMG/icons/instagram.svg" alt="Instagram" />
+                      <img src={instagramIcon} alt="Instagram" />
                     </div>
                   </a>
                 </li>
@@ -93,7 +101,7 @@ const Index = () => {
                     className="social-link"
                   >
                     <div className="icon">
-                      <img src="src/IMG/icons/linkedin.svg" alt="LinkedIn" />
+                      <img src={linkedinIcon} alt="LinkedIn" />
                     </div>
                   </a>
                 </li>
@@ -104,127 +112,95 @@ const Index = () => {
 
         <section className="card_wrapper" ref={wrapperRef}>
           <article className="card">
-            <img src="src/IMG/todo.png" alt="sky" />
+            <img src={todoImg} alt="todo" />
             <h3>Frontend/React</h3>
             <h2>Todo-app</h2>
 
             <Link to="/project">
               <div>
-                <img
-                  className="arrow-icon"
-                  src="src/IMG/icons/arrow.svg"
-                  alt="sky"
-                />
+                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
               </div>
             </Link>
           </article>
           <article className="card">
-            <img src="src/IMG/Webshop.png" alt="sky" />
+            <img src={webshopImg} alt="webshop" />
             <h3>Frontend/React och UX/UI-design</h3>
             <h2>Webshop</h2>
 
             <Link to="/webshop">
               <div>
-                <img
-                  className="arrow-icon"
-                  src="src/IMG/icons/arrow.svg"
-                  alt="sky"
-                />
+                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
               </div>
             </Link>
           </article>
 
           <article className="card">
-            <img src="src/IMG/sky.jpeg" alt="sky" />
+            <img src={skyImg} alt="sky" />
             <h3>Frontend</h3>
             <h2>Musikfestivalen</h2>
 
             <Link to="/festival">
               <div>
-                <img
-                  className="arrow-icon"
-                  src="src/IMG/icons/arrow.svg"
-                  alt="sky"
-                />
+                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
               </div>
             </Link>
           </article>
 
           <article className="card">
-            <img src="src/IMG/coolbeans.png" alt="sky" />
+            <img src={coolbeansImg} alt="coolbean" />
             <h3>UI-design</h3>
             <h2>Cool Beans</h2>
 
             <Link to="/coolbeans">
               <div>
-                <img
-                  className="arrow-icon"
-                  src="src/IMG/icons/arrow.svg"
-                  alt="sky"
-                />
+                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
               </div>
             </Link>
           </article>
           <article className="card">
-            <img src="src/IMG/todo.png" alt="sky" />
+            <img src={todoImg} alt="todo" />
             <h3>Frontendutveckling/React</h3>
             <h2>TODO-app</h2>
 
             <Link to="/project">
               <div>
-                <img
-                  className="arrow-icon"
-                  src="src/IMG/icons/arrow.svg"
-                  alt="sky"
-                />
+                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
               </div>
             </Link>
           </article>
 
           <article className="card">
-            <img src="src/IMG/Webshop.png" alt="sky" />
+            <img src={webshopImg} alt="webshop" />
             <h3>Frontendutveckling/React</h3>
             <h2>Webshop</h2>
 
             <Link to="/Webshop">
               <div>
-                <img
-                  className="arrow-icon"
-                  src="src/IMG/icons/arrow.svg"
-                  alt="sky"
-                />
+                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
               </div>
             </Link>
           </article>
 
           <article className="card">
-            <img src="src/IMG/sky.jpeg" alt="sky" />
+            <img src={skyImg} alt="sky" />
             <h3>Frontenutveckling</h3>
             <h2>Musikfestivalen</h2>
 
             <Link to="/festival">
               <div>
-                <img
-                  className="arrow-icon"
-                  src="src/IMG/icons/arrow.svg"
-                  alt="sky"
-                />
+                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
               </div>
             </Link>
           </article>
 
           <article className="card">
-            <img src="src/IMG/coolbeans.png" alt="sky" />
+            <img src={coolbeansImg} alt="coolbean" />
             <h3>Frontend/React och UX-design</h3>
             <h2>Cool Beans</h2>
 
             <Link to="/coolbeans">
               <div>
-                <img
-                  className="arrow-icon"
-                  src="src/IMG/icons/arrow.svg"
-                  alt="sky"
-                />
+                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
               </div>
             </Link>
           </article>

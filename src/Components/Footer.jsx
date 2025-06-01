@@ -1,3 +1,7 @@
+import githubIcon from "../IMG/icons/github.svg";
+import instagramIcon from "../IMG/icons/instagram.svg";
+import linkedinIcon from "../IMG/icons/linkedin.svg";
+
 const Footer = () => {
   return (
     <footer>
@@ -10,7 +14,7 @@ const Footer = () => {
             className="social-link"
           >
             <div className="icon">
-              <img src="src/IMG/icons/github.svg" alt="GitHub" />
+              <img src={githubIcon} alt="GitHub" />
             </div>
           </a>
         </li>
@@ -23,7 +27,7 @@ const Footer = () => {
             className="social-link"
           >
             <div className="icon">
-              <img src="src/IMG/icons/instagram.svg" alt="Instagram" />
+              <img src={instagramIcon} alt="Instagram" />
             </div>
           </a>
         </li>
@@ -36,7 +40,7 @@ const Footer = () => {
             className="social-link"
           >
             <div className="icon">
-              <img src="src/IMG/icons/linkedin.svg" alt="LinkedIn" />
+              <img src={linkedinIcon} alt="LinkedIn" />
             </div>
           </a>
         </li>

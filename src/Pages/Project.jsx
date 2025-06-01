@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import todoImg from "../IMG/todo.png";
 
 const Project = () => {
   return (
@@ -11,11 +12,7 @@ const Project = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="src/IMG/todo_list.png"
-                alt="webshop"
-                className="webshop-img"
-              />
+              <img src={todoImg} alt="todo" className="webshop-img" />
             </a>
             <h3>
               <span>Roll:</span> Frontend med UX/UI-design

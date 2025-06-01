@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import webshopImg from "../IMG/Webshop.png";
 
 const Webshop = () => {
   return (
@@ -11,11 +12,7 @@ const Webshop = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="src/IMG/Webshop.png"
-                alt="webshop"
-                className="webshop-img"
-              />
+              <img src={webshopImg} alt="webshop" className="webshop-img" />
             </a>
             <h3>
               <ul>
