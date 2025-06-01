@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import todoImg from "../IMG/todo.png";
+import todoImg from "../IMG/Todo.png";
 
 const Project = () => {
   return (
