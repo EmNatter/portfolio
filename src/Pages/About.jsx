@@ -14,6 +14,7 @@ import chefHatIcon from "../IMG/icons/chef-hat.png";
 import filmIcon from "../IMG/icons/film.png";
 import paletteIcon from "../IMG/icons/palette.png";
 import treesIcon from "../IMG/icons/trees.png";
+
 const About = () => {
   return (
     <div>
@@ -65,7 +66,6 @@ const About = () => {
 
             <article>
               <h3>Chas Academy, Stockholm - Examen</h3>
-
               <p>
                 Yrkeshögskoleexamen, UX/UI-design med Frontend kompetens (420
                 yhp)
@@ -111,7 +111,6 @@ const About = () => {
 
             <article>
               <h3>Linneuniversitetet</h3>
-
               <p>Kurs, Webbteknik 1</p>
               <p>
                 <strong>Jan 2024 - Apr 2024</strong>
@@ -147,10 +146,10 @@ const About = () => {
           </div>
         </section>
 
-        <section class="fun_facts">
+        <section className="fun_facts">
           <h2>Lite fakta om mig</h2>
 
-          <div class="fact_wrapper">
+          <div className="fact_wrapper">
             <article>
               <img src={chefHatIcon} alt="Chef hat" />
               <h3>Amatörkock</h3>
@@ -188,7 +187,7 @@ const About = () => {
 
             <article>
               <img src={treesIcon} alt="Trees" />
-              <h3> Hobbyfotograf</h3>
+              <h3>Hobbyfotograf</h3>
               <p>
                 Jag fotograferar helst landskap och endel stadsmiljöer, särskilt
                 på sommaren när ljuset förändras som mest. Med kameran i handen

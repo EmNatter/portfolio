@@ -1,5 +1,6 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+
 import githubIcon from "../IMG/icons/github.svg";
 import instagramIcon from "../IMG/icons/instagram.svg";
 import linkedinIcon from "../IMG/icons/linkedin.svg";
@@ -9,8 +10,9 @@ import coolbeansImg from "../IMG/coolbeans.png";
 import todoImg from "../IMG/Todo.png";
 import webshopImg from "../IMG/Webshop.png";
 
-const Index = () => {
-  const wrapperRef = useRef();
+const Index = ({ heading = "Välkommen till min portfolio!" }) => {
+  const wrapperRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const wrapper = wrapperRef.current;
@@ -28,21 +30,82 @@ const Index = () => {
 
     startScrolling();
 
-    wrapper.addEventListener("mouseenter", stopScrolling);
-    wrapper.addEventListener("mouseleave", startScrolling);
+    const handleMouseEnter = () => {
+      stopScrolling();
+      setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+      startScrolling();
+      setIsHovered(false);
+    };
+
+    wrapper.addEventListener("mouseenter", handleMouseEnter);
+    wrapper.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
       stopScrolling();
-      wrapper.removeEventListener("mouseenter", stopScrolling);
-      wrapper.removeEventListener("mouseleave", startScrolling);
+      wrapper.removeEventListener("mouseenter", handleMouseEnter);
+      wrapper.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
+
+  const cards = [
+    {
+      img: todoImg,
+      title: "Frontend/React",
+      subtitle: "Todo-app",
+      link: "/project",
+    },
+    {
+      img: webshopImg,
+      title: "Frontend/React och UX/UI-design",
+      subtitle: "Webshop",
+      link: "/webshop",
+    },
+    {
+      img: skyImg,
+      title: "Frontend",
+      subtitle: "Musikfestivalen",
+      link: "/festival",
+    },
+    {
+      img: coolbeansImg,
+      title: "UI-design",
+      subtitle: "Cool Beans",
+      link: "/coolbeans",
+    },
+    {
+      img: todoImg,
+      title: "Frontendutveckling/React",
+      subtitle: "TODO-app",
+      link: "/project",
+    },
+    {
+      img: webshopImg,
+      title: "Frontendutveckling/React",
+      subtitle: "Webshop",
+      link: "/Webshop",
+    },
+    {
+      img: skyImg,
+      title: "Frontenutveckling",
+      subtitle: "Musikfestivalen",
+      link: "/festival",
+    },
+    {
+      img: coolbeansImg,
+      title: "Frontend/React och UX-design",
+      subtitle: "Cool Beans",
+      link: "/coolbeans",
+    },
+  ];
 
   return (
     <div className="content">
       <main className="home_main">
         <section className="home_intro">
-          <h2>Välkommen till min portfolio!</h2>
+          <h2>{heading}</h2>
 
           <div className="home_intro_wrapper">
             <p>
@@ -59,15 +122,16 @@ const Index = () => {
           <div className="home_contact">
             <div className="home_contact_email">
               <h3>Kontakt</h3>
-
               <p>
-                E-post: <a href="mailto:">natteremilia@gmail.com</a>
+                E-post:{" "}
+                <a href="mailto:natteremilia@gmail.com">
+                  natteremilia@gmail.com
+                </a>
               </p>
             </div>
 
             <div className="contact_links">
               <h3>Hittar mig även här</h3>
-
               <ul className="social-links">
                 <li>
                   <a
@@ -110,100 +174,23 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="card_wrapper" ref={wrapperRef}>
-          <article className="card">
-            <img src={todoImg} alt="todo" />
-            <h3>Frontend/React</h3>
-            <h2>Todo-app</h2>
+        <section
+          className={`card_wrapper ${isHovered ? "paused" : ""}`}
+          ref={wrapperRef}
+        >
+          {cards.map((card, index) => (
+            <article className="card" key={index}>
+              <img src={card.img} alt={card.subtitle} />
+              <h3>{card.title}</h3>
+              <h2>{card.subtitle}</h2>
 
-            <Link to="/project">
-              <div>
-                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
-              </div>
-            </Link>
-          </article>
-          <article className="card">
-            <img src={webshopImg} alt="webshop" />
-            <h3>Frontend/React och UX/UI-design</h3>
-            <h2>Webshop</h2>
-
-            <Link to="/webshop">
-              <div>
-                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
-              </div>
-            </Link>
-          </article>
-
-          <article className="card">
-            <img src={skyImg} alt="sky" />
-            <h3>Frontend</h3>
-            <h2>Musikfestivalen</h2>
-
-            <Link to="/festival">
-              <div>
-                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
-              </div>
-            </Link>
-          </article>
-
-          <article className="card">
-            <img src={coolbeansImg} alt="coolbean" />
-            <h3>UI-design</h3>
-            <h2>Cool Beans</h2>
-
-            <Link to="/coolbeans">
-              <div>
-                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
-              </div>
-            </Link>
-          </article>
-          <article className="card">
-            <img src={todoImg} alt="todo" />
-            <h3>Frontendutveckling/React</h3>
-            <h2>TODO-app</h2>
-
-            <Link to="/project">
-              <div>
-                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
-              </div>
-            </Link>
-          </article>
-
-          <article className="card">
-            <img src={webshopImg} alt="webshop" />
-            <h3>Frontendutveckling/React</h3>
-            <h2>Webshop</h2>
-
-            <Link to="/Webshop">
-              <div>
-                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
-              </div>
-            </Link>
-          </article>
-
-          <article className="card">
-            <img src={skyImg} alt="sky" />
-            <h3>Frontenutveckling</h3>
-            <h2>Musikfestivalen</h2>
-
-            <Link to="/festival">
-              <div>
-                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
-              </div>
-            </Link>
-          </article>
-
-          <article className="card">
-            <img src={coolbeansImg} alt="coolbean" />
-            <h3>Frontend/React och UX-design</h3>
-            <h2>Cool Beans</h2>
-
-            <Link to="/coolbeans">
-              <div>
-                <img className="arrow-icon" src={arrowIcon} alt="arrow" />
-              </div>
-            </Link>
-          </article>
+              <Link to={card.link}>
+                <div>
+                  <img className="arrow-icon" src={arrowIcon} alt="arrow" />
+                </div>
+              </Link>
+            </article>
+          ))}
         </section>
       </main>
     </div>
