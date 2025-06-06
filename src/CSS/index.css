@@ -21,7 +21,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 h2,
@@ -33,6 +33,19 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 /* -------- HEADER -------- */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  z-index: 100;
+  position: relative;
+
+  background: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
 .navbar h1 {
   color: rgb(255, 77, 0);
   font-size: 3.8rem;
@@ -65,23 +78,6 @@ h3 {
   object-fit: cover;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 0;
-  z-index: 100;
-  position: relative;
-
-  background: rgb(0, 0, 0);
-  font-size: 20px;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
 /* -------- LAYOUT OVERALL -------- */
 
 main {
@@ -97,7 +93,7 @@ main {
   flex-direction: column;
   align-items: center;
   font-weight: 300;
-  padding: 3.5rem;
+  padding: 3.5rem 2rem;
   box-shadow: 0px 2px 5px rgb(0, 0, 0.1);
   background: rgb(31, 31, 31, 0.8);
 }
@@ -106,13 +102,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.5rem;
+  padding: 3.5rem 1rem;
   background: rgb(222, 225, 229);
   box-shadow: 0px 2px 5px rgb(0, 0, 0.1);
-}
-
-.about_wrapper h2 {
-  text-align: left;
 }
 
 .home_intro_wrapper,
@@ -122,11 +114,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 80%;
-  padding-top: 2rem;
-}
-.projectexample_card {
-  max-width: 75%;
+  max-width: 95%;
+  padding: 3rem 0rem;
 }
 
 /* -------- RECURRENTS and LINKS/BUTTONS-------- */
@@ -166,7 +155,7 @@ fieldset a[href^="mailto:"] {
 
 .projectexample_wrapper button {
   align-self: center;
-  width: 12rem;
+  width: 22rem;
   height: 45px;
   border-radius: 20px;
   border: solid black;
@@ -338,11 +327,6 @@ footer .icon img {
 /* -------- LAYOUT ABOUT------- */
 
 .about_wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 90%;
-  padding: 3rem 0rem;
   color: whitesmoke;
 }
 
@@ -359,6 +343,7 @@ footer .icon img {
   font-family: WF Visual Sans;
   font-size: 2.5rem;
   color: rgb(254, 115, 56);
+  text-align: left;
 }
 
 .about_wrapper h3 {
@@ -544,8 +529,7 @@ article ul {
   align-content: center;
   text-align: left;
   flex: 1 1 400px;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 2rem 0rem;
   font-weight: 200;
   border: none;
   color: white;
@@ -609,7 +593,7 @@ article ul {
 h3 span,
 .projectexample_card li span {
   font-weight: 600;
-  color: rgb(215, 189, 178);
+  color: rgb(186, 135, 118);
 }
 
 /* -------- FOOTER -------- */
@@ -724,9 +708,13 @@ footer .icon img {
   }
 
   .about_wrapper,
-  .home_intro_wrapper {
-    padding: 4rem 0rem;
+  .home_intro_wrapper,
+  .projectexample_card {
     max-width: 50%;
+  }
+
+  .projectexample_wrapper button {
+    width: 12rem;
   }
 
   .intro_form {
