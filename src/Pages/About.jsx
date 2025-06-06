@@ -188,7 +188,7 @@ const About = () => {
             <article>
               <img src={paletteIcon} alt="Palette" />
               <h3>Estet</h3>
-              <p>
+              <p className="estet">
                 Jag är lite extra passionerad för allt som har med färg och form
                 att göra. Min visuella resa började med makeupartistutbildning
                 och har vuxit till ett intresse för bildbehandling – från
