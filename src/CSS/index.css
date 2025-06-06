@@ -35,9 +35,9 @@ h3 {
 /* -------- HEADER -------- */
 .navbar h1 {
   color: rgb(255, 77, 0);
-  font-size: 4rem;
-  text-align: center;
+  font-size: 3.8rem;
   padding-top: 4.5rem;
+  text-align: center;
   font-style: italic;
 }
 
@@ -45,6 +45,7 @@ h3 {
   font-size: 2.5rem;
   color: white;
   padding-bottom: 3rem;
+  text-align: center;
   font-style: italic;
 }
 
@@ -73,6 +74,8 @@ h3 {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* -------- LAYOUT OVERALL -------- */
@@ -82,6 +85,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   color: white;
+  text-align: center;
 }
 
 .about {
@@ -98,7 +102,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 3.5rem;
   background: rgb(222, 225, 229);
   box-shadow: 0px 2px 5px rgb(0, 0, 0.1);
@@ -111,12 +114,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  max-width: 82%;
+  max-width: 95%;
   padding-top: 2rem;
 }
 .projectexample_card {
-  max-width: 80%;
+  max-width: 75%;
 }
 
 /* -------- RECURRENTS and LINKS/BUTTONS-------- */
@@ -268,6 +270,7 @@ footer .icon img {
   align-items: left;
   justify-content: flex-start;
   overflow: hidden;
+  text-align: left;
   color: black;
   background: rgb(190, 197, 205);
   border-radius: 2px;
@@ -326,7 +329,7 @@ footer .icon img {
   max-width: 85%;
   padding: 3rem 0rem;
   font-size: 16px;
-  color: white;
+  color: whitesmoke;
 }
 
 .about_wrapper img {
@@ -348,6 +351,7 @@ footer .icon img {
 .about_wrapper h3 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  color: whitesmoke;
 }
 
 .about_wrapper p::first-letter {
@@ -373,10 +377,10 @@ main #about_main {
 }
 
 .about_competence_buttons img {
-  height: 5rem;
-  width: 5rem;
+  height: 4.8rem;
+  width: 4.8rem;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.9rem;
   font-size: 14px;
   text-shadow: none;
   font-weight: bold;
@@ -428,13 +432,18 @@ article ul {
   display: flex;
   flex-direction: column;
   color: black;
-  background: rgb(190, 197, 205);
+  background: rgb(230, 200, 181);
   padding: 2rem;
-  border-radius: 18px;
+  border-radius: 14px;
   border: none;
   box-shadow: solid 0px 2px 3px rgb(0, 0, 0);
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.fun_facts article:hover {
+  transform: scale(1.1);
 }
 
 .fun_facts h3 {
@@ -452,8 +461,8 @@ article ul {
   padding-top: 6rem;
   padding-bottom: 4rem;
   font-size: 40px;
-  color: rgb(230, 200, 181);
-  text-shadow: 0px 1px 1px rgb(0, 0, 0.1);
+  color: rgb(190, 197, 205);
+  text-shadow: 0px 2px 2px rgb(0, 0, 0.1);
 }
 
 .fun_facts img {
@@ -480,11 +489,24 @@ article ul {
 }
 
 .cv_wrapper {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.cv_text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-width: 90%;
 }
 
 .cv div article {
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .cv h2 {

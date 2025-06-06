@@ -24,6 +24,13 @@ const About = () => {
             <img src={meImg} alt="me" />
             <h2>"Hej, jag är Emilia Nätter"</h2>
             <p>
+              Just nu studerar jag UX/UI-design med frontendutveckling, och
+              breddar mina kunskaper inom användarcentrerad design och
+              webbutveckling. Jag ser fram emot att applicera och utveckla mina
+              nya färdigheter under min kommande praktik hösten 2025 och söker
+              en praktikplats där jag kan bidra med mina tekniska färdigheter
+              samtidigt som jag får värdefull praktisk erfarenhet.
+              <br />
               Jag är målmedveten, driven och strukturerad person med en estetisk
               känsla för färg och form. Jag har arbetat inom retail som Sales
               Advisor i över 7år och har sedan 2021 en examen som Digital
@@ -62,87 +69,93 @@ const About = () => {
 
         <section className="cv">
           <div className="cv_wrapper">
-            <h2>Utbildningar</h2>
+            <div className="cv_text">
+              <h2>Utbildningar</h2>
 
-            <article>
-              <h3>Chas Academy, Stockholm - Examen</h3>
-              <p>
-                Yrkeshögskoleexamen, UX/UI-design med Frontend kompetens (420
-                yhp)
-              </p>
-              <p>
-                <strong>Sept 2024 - Maj 2026</strong>
-              </p>
-            </article>
+              <article>
+                <h3>Chas Academy, Stockholm - Examen</h3>
+                <p>
+                  Yrkeshögskoleexamen, UX/UI-design med Frontend kompetens (420
+                  yhp)
+                </p>
+                <p>
+                  <strong>Sept 2024 - Maj 2026</strong>
+                </p>
+              </article>
 
-            <article>
-              <h3>Fotoskolan STHLM, - Examen</h3>
-              <p>
-                Yrkeshögskoleutbildning (2,5 år) som Bildbehandlare/Digital
-                Imaging Specialist
-              </p>
-              <ul>
-                <li>
-                  Fokus på postproduktion av stillbilder och rörligt material
-                </li>
-                <li>Bildredigering och visuell kommunikation</li>
-                <li>
-                  Skapa estetiskt tilltalande och användarvänliga digitala
-                  upplevelser
-                </li>
-              </ul>
-              <p>
-                <strong>Aug 2019 - Dec 2021</strong>
-              </p>
-            </article>
+              <article>
+                <h3>Fotoskolan STHLM, - Examen</h3>
+                <p>
+                  Yrkeshögskoleutbildning (2,5 år) som Bildbehandlare/Digital
+                  Imaging Specialist
+                </p>
+                <ul>
+                  <li>
+                    Fokus på postproduktion av stillbilder och rörligt material
+                  </li>
+                  <li>Bildredigering och visuell kommunikation</li>
+                  <li>
+                    Skapa estetiskt tilltalande och användarvänliga digitala
+                    upplevelser
+                  </li>
+                </ul>
+                <p>
+                  <strong>Aug 2019 - Dec 2021</strong>
+                </p>
+              </article>
 
-            <article>
-              <h3>Täby Enskilda Gymnasium</h3>
-              <p>
-                Medieprogrammet med inriktning Foto. Med psykologi B, foto B och
-                C som tillval av kurser.
-              </p>
-              <p>
-                <strong>Examensår 2011</strong>
-              </p>
-            </article>
+              <article>
+                <h3>Täby Enskilda Gymnasium</h3>
+                <p>
+                  Medieprogrammet med inriktning Foto. Med psykologi B, foto B
+                  och C som tillval av kurser.
+                </p>
+                <p>
+                  <strong>Examensår 2011</strong>
+                </p>
+              </article>
 
-            <h2>Kurser, certifikat och praktiker</h2>
+              <h2>Kurser, certifikat och praktiker</h2>
 
-            <article>
-              <h3>Linneuniversitetet</h3>
-              <p>Kurs, Webbteknik 1</p>
-              <p>
-                <strong>Jan 2024 - Apr 2024</strong>
-              </p>
-            </article>
+              <article>
+                <h3>Linneuniversitetet</h3>
+                <p>Kurs, Webbteknik 1</p>
+                <p>
+                  <strong>Jan 2024 - Apr 2024</strong>
+                </p>
+              </article>
 
-            <article>
-              <h3>Advanced Higher Vocational Education Diploma - Stockholm</h3>
-              <p>Digital Imaging Specialist på Fotoskolan STHLM</p>
-              <p>
-                <strong>Utfärdad 2021</strong>
-              </p>
-            </article>
+              <article>
+                <h3>
+                  Advanced Higher Vocational Education Diploma - Stockholm
+                </h3>
+                <p>Digital Imaging Specialist på Fotoskolan STHLM</p>
+                <p>
+                  <strong>Utfärdad 2021</strong>
+                </p>
+              </article>
 
-            <article>
-              <h3>LIA (Praktik) på Parsley studio, - Stockholm</h3>
-              <p>Hos Matilda Persson under utbildningen till bildbehandlare</p>
-              <p>
-                <strong>2021</strong>
-              </p>
-            </article>
+              <article>
+                <h3>LIA (Praktik) på Parsley studio, - Stockholm</h3>
+                <p>
+                  Hos Matilda Persson under utbildningen till bildbehandlare
+                </p>
+                <p>
+                  <strong>2021</strong>
+                </p>
+              </article>
 
-            <article>
-              <h3>LIA (Praktik) på Hemmet studio, Stockholm</h3>
-              <p>
-                Hos Fotograf Morgan Norman under utbildningen till
-                bildbehandlare
-              </p>
-              <p>
-                <strong>2020</strong>
-              </p>
-            </article>
+              <article>
+                <h3>LIA (Praktik) på Hemmet studio, Stockholm</h3>
+                <p>
+                  Hos Fotograf Morgan Norman under utbildningen till
+                  bildbehandlare
+                </p>
+                <p>
+                  <strong>2020</strong>
+                </p>
+              </article>
+            </div>
           </div>
         </section>
 
