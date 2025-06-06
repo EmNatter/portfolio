@@ -17,37 +17,38 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
   useEffect(() => {
     const wrapper = wrapperRef.current;
     let scrollInterval;
+    const isMobile = window.innerWidth <= 768;
 
-    const startScrolling = () => {
-      scrollInterval = setInterval(() => {
-        if (wrapper) {
+    if (!isMobile && wrapper) {
+      const startScrolling = () => {
+        scrollInterval = setInterval(() => {
           wrapper.scrollLeft += 1;
-        }
-      }, 20);
-    };
+        }, 20);
+      };
 
-    const stopScrolling = () => clearInterval(scrollInterval);
+      const stopScrolling = () => clearInterval(scrollInterval);
 
-    startScrolling();
-
-    const handleMouseEnter = () => {
-      stopScrolling();
-      setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
       startScrolling();
-      setIsHovered(false);
-    };
 
-    wrapper.addEventListener("mouseenter", handleMouseEnter);
-    wrapper.addEventListener("mouseleave", handleMouseLeave);
+      const handleMouseEnter = () => {
+        stopScrolling();
+        setIsHovered(true);
+      };
 
-    return () => {
-      stopScrolling();
-      wrapper.removeEventListener("mouseenter", handleMouseEnter);
-      wrapper.removeEventListener("mouseleave", handleMouseLeave);
-    };
+      const handleMouseLeave = () => {
+        startScrolling();
+        setIsHovered(false);
+      };
+
+      wrapper.addEventListener("mouseenter", handleMouseEnter);
+      wrapper.addEventListener("mouseleave", handleMouseLeave);
+
+      return () => {
+        stopScrolling();
+        wrapper.removeEventListener("mouseenter", handleMouseEnter);
+        wrapper.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    }
   }, []);
 
   const cards = [
