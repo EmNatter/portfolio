@@ -260,7 +260,7 @@ footer .icon img {
   overflow-x: auto;
   scroll-behavior: smooth;
   flex-wrap: nowrap;
-  padding: 6rem;
+  padding: 3rem;
   gap: 2rem;
   background: rgb(36, 36, 36);
   -webkit-overflow-scrolling: touch;
@@ -281,10 +281,6 @@ footer .icon img {
   color: black;
   background: rgb(190, 197, 205);
   border-radius: 2px;
-}
-
-.card_wrapper::-webkit-scrollbar {
-  display: none;
 }
 
 .card:hover {
