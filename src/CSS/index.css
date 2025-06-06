@@ -261,6 +261,7 @@ footer .icon img {
   scroll-behavior: smooth;
   flex-wrap: nowrap;
   padding: 6rem;
+  gap: 2rem;
   background: rgb(36, 36, 36);
   -webkit-overflow-scrolling: touch;
 }
