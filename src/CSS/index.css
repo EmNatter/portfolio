@@ -41,6 +41,7 @@ h3 {
   font-style: italic;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-size: 3.5rem;
 }
 
 .navbar h2 {
@@ -49,6 +50,7 @@ h3 {
   padding-bottom: 3rem;
   text-align: center;
   font-style: italic;
+  font-size: 2.2rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -277,6 +279,7 @@ footer .icon img {
 }
 
 .card {
+  position: relative;
   flex: 0 0 auto;
   width: 400px;
   min-height: 350px;
@@ -317,14 +320,13 @@ footer .icon img {
   color: black;
   font-weight: 100;
 }
-
-.card .arrow-icon {
+.arrow-icon {
   position: absolute;
-  bottom: 40px;
-  right: -345px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  bottom: 2.8rem;
+  right: -22rem;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .card div {
@@ -339,7 +341,7 @@ footer .icon img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 85%;
+  max-width: 90%;
   padding: 3rem 0rem;
   color: whitesmoke;
 }
@@ -354,9 +356,8 @@ footer .icon img {
 .about_wrapper h2 {
   padding-bottom: 1rem;
   padding-top: 2rem;
-  font-size: 2.5rem;
   font-family: WF Visual Sans;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: rgb(254, 115, 56);
 }
 
@@ -692,10 +693,13 @@ footer .icon img {
 }
 /* --------- MEDIA QUAREY--------- */
 
-/* 🔽 Anpassning för mobil: mindre kort och ingen auto-scroll */
 @media (max-width: 768px) {
   .card {
     width: 250px;
+  }
+  .arrow-icon {
+    bottom: 2.8rem;
+    right: -17rem;
   }
 }
 
@@ -703,6 +707,10 @@ footer .icon img {
   html,
   body {
     font-size: 16px;
+  }
+
+  .navbar h1 {
+    font-size: 4rem;
   }
 
   .todo-small-img,
@@ -715,9 +723,10 @@ footer .icon img {
     justify-content: space-evenly;
   }
 
-  .about_wrapper {
+  .about_wrapper,
+  .home_intro_wrapper {
     padding: 4rem 0rem;
-    max-width: 60%;
+    max-width: 50%;
   }
 
   .intro_form {
