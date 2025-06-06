@@ -110,7 +110,7 @@ main {
 }
 
 .about_wrapper h2 {
-text-align: left;
+  text-align: left;
 }
 
 .home_intro_wrapper,
@@ -120,7 +120,7 @@ text-align: left;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 95%;
+  max-width: 80%;
   padding-top: 2rem;
 }
 .projectexample_card {
@@ -260,16 +260,16 @@ footer .icon img {
   overflow-x: auto;
   scroll-behavior: smooth;
   flex-wrap: nowrap;
-  gap: 2rem;
-  padding: 4rem;
+  padding: 6rem;
   background: rgb(36, 36, 36);
-  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .card {
   flex: 0 0 auto;
   width: 400px;
   min-height: 350px;
+  min-width: 300px;
   transition: transform 0.1s ease;
   display: flex;
   flex-direction: column;
@@ -332,15 +332,14 @@ footer .icon img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 75%;
+  max-width: 85%;
   padding: 3rem 0rem;
-  font-size: 16px;
   color: whitesmoke;
 }
 
 .about_wrapper img {
   max-width: 250px;
-
+  width: 100%;
   border-radius: 4px;
   box-shadow: 0px 2px 2px rgb(0, 0, 0.1);
 }
@@ -534,6 +533,7 @@ article ul {
 .projectexample_card {
   display: flex;
   flex-direction: column;
+  align-content: center;
   text-align: left;
   flex: 1 1 400px;
   padding: 2rem;
@@ -541,12 +541,14 @@ article ul {
   font-weight: 200;
   border: none;
   color: white;
+  max-width: 80%;
 }
 
-.todo-small-img,
-.webshop-img,
-.festival-img {
-  width: 450px;
+.projectexample_card a .todo-small-img,
+.projectexample_card a .festival-img,
+.projectexample_card a .webshop-img {
+  width: 100%;
+  max-width: 600px;
   height: auto;
   object-fit: cover;
   border-radius: 12px;
@@ -689,20 +691,10 @@ footer .icon img {
     font-size: 16px;
   }
 
-  .home_intro_wrapper,
-  .about_wrapper,
-  .intro_form_wrapper {
-    max-width: 50%;
-  }
-
   .todo-small-img,
   .webshop-img,
   .festival-img {
     width: 700px;
-  }
-
-  .projectexample_card {
-    max-width: 70%;
   }
 
   .card_wrapper {
@@ -711,6 +703,7 @@ footer .icon img {
 
   .about_wrapper {
     padding: 4rem 0rem;
+    max-width: 75%;
   }
 
   .intro_form {
