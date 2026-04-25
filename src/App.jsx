@@ -5,7 +5,7 @@ import Index from "./Pages/index.jsx";
 import About from "./Pages/About.jsx";
 import Project from "./Pages/Project.jsx";
 import Webshop from "./Pages/webshop.jsx";
-import Redesign from "./Pages/Redesign .jsx";
+import Redesign from "./Pages/Redesign.jsx";
 import NotFoundPage from "./Pages/NotFoundPage.jsx";
 import Footer from "./Components/Footer.jsx";
 
