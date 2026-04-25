@@ -5,14 +5,17 @@ import githubIcon from "../IMG/icons/github.svg";
 import instagramIcon from "../IMG/icons/instagram.svg";
 import linkedinIcon from "../IMG/icons/linkedin.svg";
 import arrowIcon from "../IMG/icons/arrow.svg";
-import skyImg from "../IMG/sky.jpeg";
-import coolbeansImg from "../IMG/coolbeans.png";
 import todoImg from "../IMG/Todo.png";
 import webshopImg from "../IMG/Webshop.png";
+import redesignImg from "../IMG/Redesign.png";
+import darkmodeImg from "../IMG/DarkMode.png";
 
 const Index = ({ heading = "Välkommen till min portfolio!" }) => {
   const wrapperRef = useRef(null);
+  const introRef = useRef(null);
+
   const [isHovered, setIsHovered] = useState(false);
+  const [introVisible, setIntroVisible] = useState(false);
 
   useEffect(() => {
     const wrapper = wrapperRef.current;
@@ -51,6 +54,23 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
     }
   }, []);
 
+  useEffect(() => {
+    const element = introRef.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIntroVisible(true);
+        }
+      },
+      { threshold: 0.75 },
+    );
+
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
   const cards = [
     {
       img: todoImg,
@@ -65,16 +85,17 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
       link: "/webshop",
     },
     {
-      img: skyImg,
-      title: "Frontend",
-      subtitle: "Musikfestivalen",
-      link: "/festival",
+      img: redesignImg,
+      title: "UI-design",
+      subtitle: "Domira färgredesign",
+      link: "/redesign",
     },
     {
-      img: coolbeansImg,
-      title: "UI-design",
-      subtitle: "Cool Beans",
-      link: "/coolbeans",
+      img: darkmodeImg,
+      title: "Kommer snart!",
+      subtitle: "Domira dark mode",
+      link: null,
+      hideArrow: true,
     },
     {
       img: todoImg,
@@ -86,37 +107,51 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
       img: webshopImg,
       title: "Frontendutveckling/React",
       subtitle: "Webshop",
-      link: "/Webshop",
+      link: "/webshop",
     },
     {
-      img: skyImg,
-      title: "Frontenutveckling",
-      subtitle: "Musikfestivalen",
-      link: "/festival",
+      img: redesignImg,
+      title: "UI-design",
+      subtitle: "Domira färgredesign",
+      link: "/redesign",
     },
     {
-      img: coolbeansImg,
-      title: "Frontend/React och UX-design",
-      subtitle: "Cool Beans",
-      link: "/coolbeans",
+      img: darkmodeImg,
+      title: "Kommer snart!",
+      subtitle: "Domira dark mode",
+      link: null,
+      hideArrow: true,
     },
   ];
 
   return (
     <div className="content">
       <main className="home_main">
-        <section className="home_intro">
+        <section
+          ref={introRef}
+          className={`home_intro ${introVisible ? "visible" : ""}`}
+        >
           <h2>{heading}</h2>
 
           <div className="home_intro_wrapper">
-            <p>
-              Här är min Portfolio där jag har gjort ett urval av projekt jag
-              arbetat själv med eller arbetat i team för att få fram.
+            <p className="intro_lead">
+              Här har jag samlat ett urval av projekt jag arbetat med, både
+              självständigt och tillsammans med andra.
             </p>
-            <p>
-              Under navigeringslänken <strong>Om mig</strong> hittar du mer
-              information om mig som person, styrkor och egenskaper. Du kan även
-              läsa om mina kunskaper och erfarenheter jag skaffat mig.
+
+            <p className="intro_body">
+              Projekten visar hur jag arbetar med UX/UI-design, problemlösning
+              och frontendutveckling för att skapa användarvänliga och
+              genomtänkta digitala lösningar.
+            </p>
+
+            <p className="intro_body">
+              Vill du veta mer om mig, mina styrkor och mina erfarenheter kan du
+              läsa mer på sidan{" "}
+              <Link to="/about" className="inline_link">
+                Om mig
+              </Link>
+              .
             </p>
           </div>
 
@@ -139,11 +174,8 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
                     href="https://github.com/EmNatter"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="social-link"
                   >
-                    <div className="icon">
-                      <img src={githubIcon} alt="GitHub" />
-                    </div>
+                    <img src={githubIcon} alt="GitHub" />
                   </a>
                 </li>
                 <li>
@@ -151,11 +183,8 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
                     href="https://www.instagram.com/em_natt/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="social-link"
                   >
-                    <div className="icon">
-                      <img src={instagramIcon} alt="Instagram" />
-                    </div>
+                    <img src={instagramIcon} alt="Instagram" />
                   </a>
                 </li>
                 <li>
@@ -163,11 +192,8 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
                     href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="social-link"
                   >
-                    <div className="icon">
-                      <img src={linkedinIcon} alt="LinkedIn" />
-                    </div>
+                    <img src={linkedinIcon} alt="LinkedIn" />
                   </a>
                 </li>
               </ul>
@@ -180,17 +206,24 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
           ref={wrapperRef}
         >
           {cards.map((card, index) => (
-            <article className="card" key={index}>
+            <Link
+              to={card.link || "#"}
+              key={index}
+              className="card"
+              onClick={(e) => {
+                if (!card.link) e.preventDefault();
+              }}
+            >
               <img src={card.img} alt={card.subtitle} />
               <h3>{card.title}</h3>
               <h2>{card.subtitle}</h2>
 
-              <Link to={card.link}>
-                <div>
+              <div>
+                {!card.hideArrow && (
                   <img className="arrow-icon" src={arrowIcon} alt="arrow" />
-                </div>
-              </Link>
-            </article>
+                )}
+              </div>
+            </Link>
           ))}
         </section>
       </main>

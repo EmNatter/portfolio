@@ -15,7 +15,7 @@ const Project = () => {
               <img src={todoImg} alt="todo" className="webshop-img" />
             </a>
             <h3>
-              <span>Roll:</span> Frontend med UX/UI-design
+              <strong>Roll:</strong> Frontend med UX/UI-design
             </h3>
             <h1>ToDo-app i React/Vite</h1>
             <p>
@@ -77,7 +77,7 @@ const Project = () => {
 
             <div className="button_center">
               <Link to="/">
-                <button>Tillbaka</button>
+                <button>Tillbaka hem</button>
               </Link>
             </div>
           </div>

@@ -17,10 +17,10 @@ const Webshop = () => {
             <h3>
               <ul>
                 <li>
-                  <span>Tid för genomförande:</span> 10 veckor
+                  <strong>Tid för genomförande:</strong> 10 veckor
                 </li>
                 <li>
-                  <span>Roll:</span> Frontend med UX/UI-design
+                  <strong>Roll:</strong> Frontend med UX/UI-design
                 </li>
               </ul>
             </h3>
@@ -89,7 +89,7 @@ const Webshop = () => {
             </p>
             <div className="button_center">
               <Link to="/">
-                <button>Tillbaka</button>
+                <button>Tillbaka hem</button>
               </Link>
             </div>
           </div>

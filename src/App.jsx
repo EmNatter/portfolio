@@ -5,8 +5,7 @@ import Index from "./Pages/index.jsx";
 import About from "./Pages/About.jsx";
 import Project from "./Pages/Project.jsx";
 import Webshop from "./Pages/webshop.jsx";
-import Festival from "./Pages/Festival.jsx";
-import Coolbeans from "./Pages/Cool beans.jsx";
+import Redesign from "./Pages/Redesign .jsx";
 import NotFoundPage from "./Pages/NotFoundPage.jsx";
 import Footer from "./Components/Footer.jsx";
 
@@ -29,8 +28,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Project />} />
           <Route path="/webshop" element={<Webshop />} />
-          <Route path="/festival" element={<Festival />} />
-          <Route path="/coolbeans" element={<Coolbeans />} />
+          <Route path="/redesign" element={<Redesign />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

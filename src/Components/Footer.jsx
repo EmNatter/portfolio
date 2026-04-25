@@ -45,7 +45,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <p>© 2025 Emilia Nätters portfolio</p>
+      <p>© 2026 Emilia Nätters portfolio</p>
     </footer>
   );
 };

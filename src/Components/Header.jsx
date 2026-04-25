@@ -11,8 +11,8 @@ const Header = ({ links }) => {
       <HamburgerMenu links={links} />
       <h1>Emilia Nätters Portfolio</h1>
       <h2 className="handwritten">
-        UX/UI-designer med <br />
-        Frontendkompetens
+        UX Designer | UX Researcher |<br />
+        Visuell design & Frontend
       </h2>
     </nav>
   );
