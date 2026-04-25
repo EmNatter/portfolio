@@ -293,8 +293,7 @@ const About = () => {
                 </p>
               </article>
 
-              <h2>Kurser, Praktiker & certifikat</h2>
-
+              <h2>Certifikat</h2>
               <article>
                 <h3>
                   Digital tillgänglighet & Inkluderande design, Diplom –
@@ -307,17 +306,6 @@ const About = () => {
               </article>
 
               <article>
-                <h3>Webbteknik 1 | Linnéuniversitetet</h3>
-                <p>
-                  <strong>Jan 2024 - Apr 2024</strong>
-                </p>
-                <p>
-                  Introduktionskurs i webbutveckling: HTML & CSS,
-                  Informationsarkitektur och användarcentrerad design
-                </p>
-              </article>
-
-              <article>
                 <h3>
                   Digital Imaging Specialist | Advanced Higher Vocational
                   Education Diploma – Stockholm
@@ -326,6 +314,18 @@ const About = () => {
                   <strong>Utfärdad 2021</strong>
                 </p>
                 <p>Utfärdat av Fotoskolan STHLM </p>
+              </article>
+
+              <h2>Kurser & Praktiker</h2>
+              <article>
+                <h3>Webbteknik 1 | Linnéuniversitetet</h3>
+                <p>
+                  <strong>Jan 2024 - Apr 2024</strong>
+                </p>
+                <p>
+                  Introduktionskurs i webbutveckling: HTML & CSS,
+                  Informationsarkitektur och användarcentrerad design
+                </p>
               </article>
 
               <article>

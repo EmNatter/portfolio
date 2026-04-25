@@ -24,6 +24,10 @@ body {
   line-height: 1.6;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h2,
 h1 {
   font-family: "Inter", sans-serif;
@@ -49,7 +53,7 @@ h3 {
 .navbar h1 {
   color: rgb(255, 77, 0);
 
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   padding-top: 4.5rem;
   text-align: center;
   font-style: italic;
@@ -58,12 +62,11 @@ h3 {
 }
 
 .navbar h2 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: rgb(120, 68, 64);
   padding-bottom: 3rem;
   text-align: center;
   font-style: italic;
-  font-size: 1.9rem;
   font-weight: 100;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -97,17 +100,16 @@ main {
   padding: 3.5rem 2rem;
   box-shadow: 0px 2px 5px rgb(0, 0, 0.1);
   background: rgb(31, 31, 31, 0.8);
+  width: 100%;
 }
 
 .home_intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.5rem 1rem;
+  padding: 3.8rem 1rem;
   background: rgb(222, 225, 229);
   box-shadow: 0px 2px 5px rgb(0, 0, 0.1);
-}
-.home_intro {
   opacity: 1;
   transform: none;
   transition: none;
@@ -172,8 +174,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 95%;
-  padding: 3rem 0rem;
 }
 
 /* -------- RECURRENTS and LINKS/BUTTONS-------- */
@@ -439,7 +439,7 @@ footer .icon img {
 .about_wrapper h2 {
   padding: 2rem 0 1rem;
   font-family: WF Visual Sans;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: rgb(254, 115, 56);
   text-align: left;
 }
@@ -456,7 +456,8 @@ footer .icon img {
 /* -------- ABOUT TEXT -------- */
 
 .about_text {
-  max-width: 620px;
+  width: 100%;
+  max-width: 630px;
   letter-spacing: -0.01em;
 
   opacity: 0;
@@ -506,22 +507,23 @@ footer .icon img {
 }
 
 .about_competence_buttons_wrapper article > div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 
-  justify-items: center;
-  align-items: start;
-
-  width: 100%;
+  gap: clamp(1rem, 2vw, 1.8rem);
   max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .about_competence_buttons_wrapper article > div > div {
   display: flex;
   flex-direction: column;
+  flex: 0 0 auto;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .about_competence_buttons h4 {
@@ -532,14 +534,13 @@ footer .icon img {
 }
 
 .about_competence_buttons img {
-  width: 4.8rem;
-  height: 4.8rem;
-
+  width: 80px;
+  height: 75px;
+  flex: 0 0 72px;
+  object-fit: cover;
   border-radius: 0.9rem;
-
   background: rgb(230, 200, 181);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-
   transition: transform 0.25s ease;
 }
 
@@ -685,7 +686,7 @@ article ul {
 }
 
 .cv div article {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -696,7 +697,7 @@ article ul {
 }
 
 .cv h2 {
-  padding: 3rem 0rem;
+  padding: 3rem 0rem 2rem 0rem;
   text-shadow: 0px 1px 1px rgb(0, 0, 0.1);
   color: rgb(255, 77, 0);
   font-family: "Inter", sans-serif;
@@ -894,6 +895,19 @@ footer .icon img {
   .home_intro.visible .home_contact {
     animation-duration: 0.55s;
   }
+
+  .about_wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 0rem;
+  }
+
+  .about_wrapper p,
+  .about_wrapper h2,
+  .about_wrapper h3 {
+    max-width: 100%;
+    text-align: left;
+  }
 }
 
 @media (min-width: 860px) {
@@ -908,7 +922,7 @@ footer .icon img {
 
   .todo-small-img,
   .webshop-img,
-  .festival-img {
+  .redesign-img {
     width: 700px;
   }
 
@@ -922,16 +936,8 @@ footer .icon img {
     max-width: 50%;
   }
 
-  .projectexample_wrapper button {
-    width: 12rem;
-  }
-
   .intro_form {
     height: 50vh;
-  }
-
-  .about_wrapper img {
-    max-width: 350px;
   }
 
   .cv_wrapper {
