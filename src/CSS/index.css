@@ -26,6 +26,9 @@ body {
 
 body {
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h2,
@@ -655,7 +658,6 @@ article ul {
   text-align: left;
   color: black;
   padding: 5rem 2rem;
-  background: rgb(190, 197, 205);
   background: rgb(243, 235, 230);
   box-shadow: 0px 2px 4px rgb(0, 0, 0.5);
 
@@ -697,7 +699,7 @@ article ul {
 }
 
 .cv h2 {
-  padding: 3rem 0rem 2rem 0rem;
+  padding: 2rem 0rem 2rem 0rem;
   text-shadow: 0px 1px 1px rgb(0, 0, 0.1);
   color: rgb(255, 77, 0);
   font-family: "Inter", sans-serif;
@@ -788,6 +790,11 @@ article ul {
 h3 span,
 .projectexample_card span {
   font-weight: 800;
+}
+
+.projectexample_card strong {
+  font-weight: 800;
+  color: rgb(120, 68, 64);
 }
 
 /* -------- FOOTER -------- */
