@@ -14,10 +14,13 @@ const Redesign = () => {
                 <li>
                   <strong>Roll: </strong>UI-design
                 </li>
+                <li>
+                  <strong>Projekt: </strong>Domira 2.0
+                </li>
               </ul>
             </h2>
 
-            <h1>Domira 2.0 – När färg skapar balans</h1>
+            <h1>Programteman i balans</h1>
 
   
             <h2>Problem & kontext</h2>

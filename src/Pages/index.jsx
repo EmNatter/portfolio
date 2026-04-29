@@ -72,6 +72,19 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
   }, []);
 
   const cards = [
+     {
+      img: redesignImg,
+      title: "Domira 2.0 - UI/UX-design",
+      subtitle: "Teman i balans",
+      link: "/redesign",
+    },
+    {
+      img: darkmodeImg,
+      title: "Kommer snart!",
+      subtitle: "Mellan ljus & mörker",
+      link: null,
+      hideArrow: true,
+    },
     {
       img: todoImg,
       title: "Frontend/React",
@@ -84,16 +97,16 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
       subtitle: "Webshop",
       link: "/webshop",
     },
-    {
+     {
       img: redesignImg,
-      title: "UI-design",
-      subtitle: "Domira färgredesign",
+      title: "Domira 2.0 - UI/UX-design",
+      subtitle: "Teman i balans",
       link: "/redesign",
     },
     {
       img: darkmodeImg,
       title: "Kommer snart!",
-      subtitle: "Domira dark mode",
+      subtitle: "Mellan ljus & mörker",
       link: null,
       hideArrow: true,
     },
@@ -108,19 +121,6 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
       title: "Frontendutveckling/React",
       subtitle: "Webshop",
       link: "/webshop",
-    },
-    {
-      img: redesignImg,
-      title: "UI-design",
-      subtitle: "Domira färgredesign",
-      link: "/redesign",
-    },
-    {
-      img: darkmodeImg,
-      title: "Kommer snart!",
-      subtitle: "Domira dark mode",
-      link: null,
-      hideArrow: true,
     },
   ];
 

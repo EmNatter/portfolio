@@ -14,7 +14,7 @@ const Webshop = () => {
             >
               <img src={webshopImg} alt="webshop" className="webshop-img" />
             </a>
-            <h3>
+            <h2>
               <ul>
                 <li>
                   <strong>Tid för genomförande:</strong> 10 veckor
@@ -23,7 +23,7 @@ const Webshop = () => {
                   <strong>Roll:</strong> Frontend med UX/UI-design
                 </li>
               </ul>
-            </h3>
+            </h2>
 
             <h1>E-handelsapp i Vite</h1>
             <p>
