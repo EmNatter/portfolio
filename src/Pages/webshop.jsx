@@ -67,13 +67,13 @@ const Webshop = () => {
               komponenter skrivna med arrow-functions och export default. All
               kod är uppdelad i separata filer för en logisk struktur.
             </p>
-            <h4>Design och layout</h4>
+            <h2>Design och layout</h2>
             <p>
               Applikationen är designad i Figma där vi skapade wireframes och
               mockups. Fokus låg på att bygga en enhetlig och responsiv layout
               som fungerar på både mobil och desktop.
             </p>
-            <h4>Samarbete och versionshantering</h4>
+            <h2>Samarbete och versionshantering</h2>
             <p>
               Projektet versionshanterades med Git och finns på GitHub. Eftersom
               vi jobbade i grupp lärde vi oss att hantera kodbasen tillsammans
@@ -82,7 +82,7 @@ const Webshop = () => {
               drivande roll i projektledandet och hjälpte till att hålla en
               tydlig struktur i filerna och i vårt arbetsflöde.
             </p>
-            <h4>Kodkvalitet</h4>
+            <h2>Kodkvalitet</h2>
             <p>
               Koden är formaterad med Prettier för att säkerställa konsekvent
               och läsbar kod.

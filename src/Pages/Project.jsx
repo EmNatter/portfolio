@@ -15,7 +15,7 @@ const Project = () => {
               <img src={todoImg} alt="todo" className="webshop-img" />
             </a>
             <h3>
-              <strong>Roll:</strong> Frontend med UX/UI-design
+              <strong>Roll: </strong>Frontend med UX/UI-design
             </h3>
             <h1>ToDo-app i React/Vite</h1>
             <p>
@@ -53,26 +53,27 @@ const Project = () => {
               React-syntax. Varje del av Webbappen är uppdelad i egna filer för
               tydlig struktur.
             </p>
-            <h4>Design och layout</h4>
+            
+            <h3>Design och layout</h3>
 
             <p>
               Jag fokuserade på en enkel och enhetlig design med tydlig
               typografi och färgval. Layouten byggdes med Flexbox för att
               enkalare göra webbappen responsiv.
             </p>
-            <h4>Spara i webbläsaren</h4>
+            <h3>Spara i webbläsaren</h3>
             <p>
               Todos lagras i LocalStorage så att de finns kvar vid
               siduppdatering eller återbesök.
             </p>
 
-            <h4>Visuell bekräftelse</h4>
+            <h3>Visuell bekräftelse</h3>
             <p>
               När alla uppgifter är klara visas ett meddelande eller en
               animation.
             </p>
 
-            <h4>Kodkvalitet</h4>
+            <h3>Kodkvalitet</h3>
             <p>Koden är välstrukturerad och formaterad med Prettier. </p>
 
             <div className="button_center">

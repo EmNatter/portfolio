@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
+
 .handwritten {
   font-family: "Playfair Display", serif;
   font-weight: 100;
@@ -59,7 +60,7 @@ h1 {
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family:"Poppins", sans-serif;
 }
 /* -------- HEADER -------- */
 
@@ -71,12 +72,12 @@ h3 {
   z-index: 100;
   position: relative;
 
-  background: rgb(0, 0, 0);
+  background:rgb(11, 6, 6);
   font-size: 20px;
 }
 
 .navbar h1 {
-  color: rgb(255, 77, 0);
+  color: rgb(224, 83, 23);
 
   font-size: 3.4rem;
   padding-top: 4.5rem;
@@ -88,7 +89,7 @@ h3 {
 
 .navbar h2 {
   font-size: 1.7rem;
-  color: rgb(120, 68, 64);
+  color: rgb(132, 74, 70);
   padding-bottom: 3rem;
   text-align: center;
   font-style: italic;
@@ -132,8 +133,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.8rem 1rem;
-  background: rgb(222, 225, 229);
+  padding: 5rem 1rem;
+  background: rgb(190, 197, 205);
   box-shadow: 0px 2px 5px rgb(0, 0, 0.1);
   opacity: 1;
   transform: none;
@@ -148,6 +149,9 @@ main {
   animation: introFade 0.7s ease forwards;
 }
 
+.home_contact {
+  margin-top: 4rem;
+}
 .home_intro.visible h2 {
   animation-delay: 0.05s;
 }
@@ -175,15 +179,17 @@ main {
 .intro_lead {
   font-size: 1.25rem;
   line-height: 1.7;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.01em;
   margin-bottom: 1.5rem;
   opacity: 0.95;
-  color: #393939;
+  color: #1b1b1b;
 }
 .intro_body {
-  font-size: 1rem;
+  color: #1b1b1b;
+  font-size: 1.01rem;
   line-height: 1.8;
+  font-weight: 400;
   opacity: 0.75;
   margin-bottom: 1rem;
 }
@@ -208,9 +214,9 @@ strong {
 }
 
 .inline_link {
-  font-weight: 500;
+  font-weight: 800;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 2px;
   color: inherit;
   white-space: nowrap;
 }
@@ -424,7 +430,7 @@ footer .icon img {
 .card h2 {
   padding-left: 1rem;
   padding-top: 1px;
-  color: black;
+  color:  rgb(16, 8, 8);
 }
 
 .card h3 {
@@ -465,13 +471,13 @@ footer .icon img {
   padding: 2rem 0 1rem;
   font-family: WF Visual Sans;
   font-size: 2.3rem;
-  color: rgb(254, 115, 56);
+  color: rgb(243, 235, 230);
   text-align: left;
 }
 
 .about_wrapper h3 {
   padding: 2rem 0;
-  color: whitesmoke;
+  color: rgb(243, 235, 230);
 }
 
 .about_wrapper p {
@@ -500,8 +506,9 @@ footer .icon img {
 .about_lead {
   font-size: 1.15rem;
   line-height: 1.75;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 1.2rem;
+  color: rgb(216, 215, 214);
 }
 
 .about_body {
@@ -780,8 +787,9 @@ article ul {
   padding-top: 4rem;
 }
 
-.projectexample_card h4 {
-  padding-top: 1rem;
+.projectexample_card h2 {
+  padding-top: 3rem;
+  padding-bottom: 0.6rem;
 }
 
 .projectexample_card a {
@@ -809,14 +817,14 @@ article ul {
   justify-content: center;
   margin-top: 2rem;
 }
-h3 span,
+.projectexample_card h2, .projectexample_card h3,
 .projectexample_card span {
   font-weight: 800;
 }
 
 .projectexample_card strong {
   font-weight: 800;
-  color: rgb(120, 68, 64);
+  color: rgb(132, 74, 70);
 }
 
 /* -------- FOOTER -------- */
@@ -827,7 +835,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background: rgb(0, 0, 0);
+  background:rgb(11, 6, 6);
 
   padding-top: 2rem;
   padding-bottom: 0rem;
