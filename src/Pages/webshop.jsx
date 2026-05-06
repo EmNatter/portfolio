@@ -15,7 +15,7 @@ const Webshop = () => {
               <img src={webshopImg} alt="webshop" className="webshop-img" />
             </a>
             <h2>
-              <ul>
+              <ul className="list-clean">
                 <li>
                   <strong>Tid för genomförande:</strong> 10 veckor
                 </li>
@@ -43,20 +43,20 @@ const Webshop = () => {
               UX/UI-design. Projektet utmanade oss att bygga en komplett
               shoppingupplevelse, från produktvisning till orderbekräftelse.
             </p>
-            <ul>
-              <li>
+            <ul className="list-clean">
+              <li className="text-span">
                 <span>Produktlista:</span> Användaren kan se en lista med
                 produkter, som hämtas från ett externt API.
               </li>
-              <li>
+              <li className="text-span">
                 <span>Produktsida:</span> Klicka på en produkt för att se
                 detaljerad information.
               </li>
-              <li>
+              <li className="text-span">
                 <span>Kundvagn:</span> Möjlighet att lägga till produkter och
                 genomföra ett köp (utan betalningsimplementation).
               </li>
-              <li>
+              <li className="text-span">
                 <span>Orderbekräftelse:</span> Efter köp visas en enkel
                 orderbekräftelse.
               </li>

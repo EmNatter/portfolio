@@ -10,7 +10,7 @@ const Redesign = () => {
             <img src={RedesignImg} alt="redesign" className="redesign-img" />
 
             <h2>
-              <ul>
+              <ul className="list-clean">
                 <li>
                   <strong>Roll: </strong>UI-design
                 </li>
@@ -20,7 +20,7 @@ const Redesign = () => {
               </ul>
             </h2>
 
-            <h1>Färgsystem för programteman</h1>
+            <h1>Programteman i balans</h1>
 
             <h2>Problem & kontext</h2>
 
@@ -29,13 +29,9 @@ const Redesign = () => {
               reflektionsövningar. I den tidigare versionen visades flera
               temafärger samtidigt i vyer som Guide Me, vilket skapade ett
               visuellt uttryck som inte fullt ut stödde produktens lugna och
-              trygga tonalitet.
-            </p>
-
-            <p>
-              Samtidigt utökades strukturen från fyra till sex program, vilket
-              ökade behovet av ett färgsystem som både särskiljer innehåll och
-              skapar en tydlig visuell helhet.
+              trygga tonalitet. Samtidigt utökades strukturen från fyra till sex
+              program, vilket ökade behovet av ett färgsystem som både
+              särskiljer innehåll och skapar en tydlig visuell helhet.
             </p>
 
             <h2>Min roll</h2>
@@ -43,14 +39,10 @@ const Redesign = () => {
             <p>
               Jag drev designarbetet kring färgsystemet och ansvarade för att ta
               fram och iterera färgskalor inom den befintliga strukturen (pale,
-              medium och accent).
-            </p>
-
-            <p>
-              Arbetet skedde i nära samarbete med produktägaren där vi
-              itererade lösningar tillsammans. Jag tog fram och visualiserade
-              designriktningar som låg till grund för beslut, medan
-              produktägaren fattade de slutgiltiga besluten.
+              medium och accent). Arbetet skedde i nära samarbete med
+              produktägaren där vi itererade lösningar tillsammans. Jag tog fram
+              och visualiserade designriktningar som låg till grund för beslut,
+              medan produktägaren fattade de slutgiltiga besluten.
             </p>
 
             <h2>Process & arbetssätt</h2>
@@ -58,25 +50,18 @@ const Redesign = () => {
             <p>
               Färgskalorna utvecklades iterativt i Figma genom justering av
               mättnad, ljusvärde och kontrast, med fokus på hur de fungerade i
-              UI och systemet som helhet.
-            </p>
-
-            <p>
-              Guide Me-flödet användes som testyta för att utvärdera hur flera
-              program fungerade tillsammans och säkerställa tydlig visuell
-              hierarki i komplexa vyer.
+              UI och systemet som helhet. Guide Me-flödet användes som testyta
+              för att utvärdera hur flera program fungerade tillsammans och
+              säkerställa tydlig visuell hierarki i komplexa vyer.
             </p>
 
             <p>
               En central utmaning var att balansera tydlig visuell
               särskiljning med en lugn och sammanhållen tonalitet, utan att
-              färgerna blev för skarpa eller för dova.
-            </p>
-
-            <p>
-              Beslut togs baserat på hur väl färgerna fungerade tillsammans i
-              vyer med flera program och hur tydligt de kunde särskiljas utan
-              att bryta produktens visuella identitet.
+              färgerna blev för skarpa eller för dova. Beslut togs baserat på
+              hur väl färgerna fungerade tillsammans i vyer med flera program
+              och hur tydligt de kunde särskiljas utan att bryta produktens
+              visuella identitet.
             </p>
 
             <h2>Testning i produkt</h2>
@@ -85,22 +70,16 @@ const Redesign = () => {
               Färgerna testades direkt i den faktiska appmiljön, där
               produktägaren implementerade dem via Contentful. Detta möjliggjorde
               snabb utvärdering i riktiga vyer och kontinuerlig iteration.
-            </p>
-
-            <p>
               Eftersom appen vid tillfället hade låg trafik kunde vi arbeta
               iterativt och justera designen löpande baserat på faktisk
-              användning i produkten.
-            </p>
-
-            <p>
-              Detta säkerställde att designbesluten inte bara fungerade i
-              designverktyg, utan även i en verklig produktmiljö.
+              användning i produkten. Detta säkerställde att designbesluten inte
+              bara fungerade i designverktyg, utan även i en verklig
+              produktmiljö.
             </p>
 
             <h2>Designsystem</h2>
 
-            <ul>
+            <ul className="list-clean">
               <li><strong>Pale:</strong> bakgrunder och större ytor</li>
               <li><strong>Medium:</strong> huvudfärg</li>
               <li><strong>Accent:</strong> interaktioner och markeringar</li>
@@ -108,7 +87,7 @@ const Redesign = () => {
 
             <h2>Resultat & effekt</h2>
 
-            <ul>
+            <ul className="result-list">
               <li>Tydligare visuell hierarki mellan program</li>
               <li>Förbättrad visuell särskiljning i komplexa vyer</li>
               <li>Mer sammanhållen och balanserad färgpalett</li>
@@ -116,7 +95,7 @@ const Redesign = () => {
                 Minskad visuell belastning, vilket gör det enklare att orientera
                 sig och välja program
               </li>
-              <li>Starkare och mer konsekvent visuell struktur i hela appen</li>
+              <li>Mer konsekvent visuell struktur i hela appen</li>
             </ul>
 
             <p>
@@ -134,9 +113,9 @@ const Redesign = () => {
             </p>
 
             <p>
-              Projektet visade hur små förändringar i färg har stor påverkan på
-              både tydlighet och känsla i en produkt. Färgsystemet fungerar nu
-              som en stabil grund som kan vidareutvecklas i takt med att
+              Projektet visade hur små förändringar i färg kan ha stor påverkan
+              på både tydlighet och känsla i en produkt. Färgsystemet fungerar
+              nu som en stabil grund som kan vidareutvecklas i takt med att
               produkten växer.
             </p>
 

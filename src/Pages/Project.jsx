@@ -36,12 +36,12 @@ const Project = () => {
               Projektet gick ut på att skapa en flersidig app med tydliga
               funktioner och en enkel, snygg design.
             </p>
-            <ul>
-              <li>
+            <ul className="list-clean">
+              <li className="text-span">
                 <span>Todo-sida:</span> Användaren kan lägga till, visa och
                 bocka av uppgifter.
               </li>
-              <li>
+              <li className="text-span">
                 <span>Om-sida:</span> Kort information om appens syfte och
                 funktion.
               </li>

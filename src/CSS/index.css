@@ -71,14 +71,12 @@ h3 {
   flex-shrink: 0;
   z-index: 100;
   position: relative;
-
   background:rgb(11, 6, 6);
   font-size: 20px;
 }
 
 .navbar h1 {
   color: rgb(224, 83, 23);
-
   font-size: 3.4rem;
   padding-top: 4.5rem;
   text-align: center;
@@ -247,7 +245,7 @@ fieldset a[href^="mailto:"] {
   align-self: center;
   width: 22rem;
   height: 46px;
-
+  margin-bottom: 2rem;
   border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.08);
 
@@ -741,11 +739,13 @@ article ul {
 
 .projectexample_wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
   background: rgb(36, 36, 36);
 }
+
 
 .projectexample_card {
   display: flex;
@@ -758,6 +758,8 @@ article ul {
   border: none;
   color: white;
   max-width: 80%;
+  margin: 0 auto;
+  line-height: 1.75;
 }
 
 .projectexample_card a .todo-small-img,
@@ -784,7 +786,7 @@ article ul {
 }
 .projectexample_card h3 {
   font-weight: 200;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .projectexample_card h2 li {
@@ -805,17 +807,25 @@ font-weight: 100;
 }
 
 .projectexample_card ul {
-  list-style-type: none;
-  padding-top: 1rem;
-  padding-left: 0;
-  margin-left: 0;
+  margin: 0;
+  padding-left: 1.5rem; 
 }
 
-.projectexample_card li {
-  margin-left: 0;
-  text-indent: 0;
-  margin-bottom: 0.5rem;
+.projectexample_card ul.list-clean {
+  list-style: none;
+  padding-left: 0;
 }
+
+.projectexample_card ul.list-result {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.projectexample_card ul.list-result li {
+  display: list-item;
+}
+
 .button_center {
   display: flex;
   justify-content: center;
@@ -824,6 +834,11 @@ font-weight: 100;
 .projectexample_card h2, .projectexample_card h3,
 .projectexample_card span {
   font-weight: 800;
+}
+
+.text-span {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .projectexample_card strong {
@@ -918,6 +933,12 @@ footer .icon img {
 /* --------- MEDIA QUAREY--------- */
 
 @media (max-width: 768px) {
+  
+    html,
+  body {
+    font-size: 12px;
+  }
+
   .card {
     width: 250px;
   }
@@ -966,7 +987,7 @@ footer .icon img {
   .todo-small-img,
   .webshop-img,
   .redesign-img {
-    width: 700px;
+    max-width: 700px;
   }
 
   .card_wrapper {
@@ -976,7 +997,7 @@ footer .icon img {
   .about_wrapper,
   .home_intro_wrapper,
   .projectexample_card {
-    max-width: 50%;
+    max-width: 55%;
   }
 
   .intro_form {
