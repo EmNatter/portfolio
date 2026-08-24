@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import DarkModeImg from "../IMG/Darkmode.png";
+import DarkModeImg from "../IMG/DarkMode.png";
 
 const DarkMode = () => {
   return (
@@ -14,9 +14,8 @@ const DarkMode = () => {
             <img
               src={DarkModeImg}
               alt="Night mode design for Domira"
-              className="redesign-img"
+              className="darkmode-img"
             />
-            ```
             <h2>
               <ul className="list-clean">
                 <li>
