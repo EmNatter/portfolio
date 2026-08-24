@@ -12,116 +12,116 @@ const Redesign = () => {
             <h2>
               <ul className="list-clean">
                 <li>
-                  <strong>Roll: </strong>UI-design
+                  <strong>Role: </strong>UI Design
                 </li>
                 <li>
-                  <strong>Projekt: </strong>Domira 2.0
+                  <strong>Project: </strong>Domira 2.0
                 </li>
               </ul>
             </h2>
 
-            <h1>Programteman i balans</h1>
+            <h1>Balancing Program Themes</h1>
 
-            <h2>Problem & kontext</h2>
-
-            <p>
-              Domira 2.0 är en mental hälso-app med guidade program och
-              reflektionsövningar. I den tidigare versionen visades flera
-              temafärger samtidigt i vyer som Guide Me, vilket skapade ett
-              visuellt uttryck som inte fullt ut stödde produktens lugna och
-              trygga tonalitet. Samtidigt utökades strukturen från fyra till sex
-              program, vilket ökade behovet av ett färgsystem som både
-              särskiljer innehåll och skapar en tydlig visuell helhet.
-            </p>
-
-            <h2>Min roll</h2>
+            <h2>Problem & Context</h2>
 
             <p>
-              Jag drev designarbetet kring färgsystemet och ansvarade för att ta
-              fram och iterera färgskalor inom den befintliga strukturen (pale,
-              medium och accent). Arbetet skedde i nära samarbete med
-              produktägaren där vi itererade lösningar tillsammans. Jag tog fram
-              och visualiserade designriktningar som låg till grund för beslut,
-              medan produktägaren fattade de slutgiltiga besluten.
+              Domira 2.0 is a mental wellness app with guided programs and
+              reflection exercises. In the previous version, several theme
+              colours were shown at the same time in views such as Guide Me,
+              which created a visual expression that did not fully support the
+              product’s calm and reassuring tone. At the same time, the
+              structure was expanded from four to six programs, increasing the
+              need for a colour system that could both differentiate content and
+              create a clear visual whole.
             </p>
 
-            <h2>Process & arbetssätt</h2>
+            <h2>My Role</h2>
 
             <p>
-              Färgskalorna utvecklades iterativt i Figma genom justering av
-              mättnad, ljusvärde och kontrast, med fokus på hur de fungerade i
-              UI och systemet som helhet. Guide Me-flödet användes som testyta
-              för att utvärdera hur flera program fungerade tillsammans och
-              säkerställa tydlig visuell hierarki i komplexa vyer.
+              I drove the design work around the colour system and was
+              responsible for creating and iterating colour scales within the
+              existing structure: pale, medium and accent. The work was carried
+              out in close collaboration with the product owner, where we
+              iterated on solutions together. I created and visualised design
+              directions that informed decisions, while the product owner made
+              the final decisions.
+            </p>
+
+            <h2>Process & Approach</h2>
+
+            <p>
+              The colour scales were developed iteratively in Figma by adjusting
+              saturation, lightness and contrast, with focus on how they worked
+              in the UI and as part of the system as a whole. The Guide Me flow
+              was used as a test area to evaluate how several programs worked
+              together and to ensure clear visual hierarchy in complex views.
             </p>
 
             <p>
-              En central utmaning var att balansera tydlig visuell
-              särskiljning med en lugn och sammanhållen tonalitet, utan att
-              färgerna blev för skarpa eller för dova. Beslut togs baserat på
-              hur väl färgerna fungerade tillsammans i vyer med flera program
-              och hur tydligt de kunde särskiljas utan att bryta produktens
-              visuella identitet.
+              A central challenge was balancing clear visual differentiation with
+              a calm and cohesive tone, without making the colours feel too
+              sharp or too muted. Decisions were based on how well the colours
+              worked together in views with several programs, and how clearly
+              they could be distinguished without breaking the product’s visual
+              identity.
             </p>
 
-            <h2>Testning i produkt</h2>
+            <h2>Testing in Product</h2>
 
             <p>
-              Färgerna testades direkt i den faktiska appmiljön, där
-              produktägaren implementerade dem via Contentful. Detta möjliggjorde
-              snabb utvärdering i riktiga vyer och kontinuerlig iteration.
-              Eftersom appen vid tillfället hade låg trafik kunde vi arbeta
-              iterativt och justera designen löpande baserat på faktisk
-              användning i produkten. Detta säkerställde att designbesluten inte
-              bara fungerade i designverktyg, utan även i en verklig
-              produktmiljö.
+              The colours were tested directly in the actual app environment,
+              where the product owner implemented them through Contentful. This
+              enabled quick evaluation in real views and continuous iteration.
+              Since the app had low traffic at the time, we were able to work
+              iteratively and adjust the design based on actual use in the
+              product. This ensured that the design decisions worked not only in
+              the design tool, but also in a real product environment.
             </p>
 
-            <h2>Designsystem</h2>
+            <h2>Design System</h2>
 
             <ul className="list-clean">
-              <li><strong>Pale:</strong> bakgrunder och större ytor</li>
-              <li><strong>Medium:</strong> huvudfärg</li>
-              <li><strong>Accent:</strong> interaktioner och markeringar</li>
+              <li><strong>Pale:</strong> backgrounds and larger surfaces</li>
+              <li><strong>Medium:</strong> main colour</li>
+              <li><strong>Accent:</strong> interactions and highlights</li>
             </ul>
 
-            <h2>Resultat & effekt</h2>
+            <h2>Result & Impact</h2>
 
             <ul className="result-list">
-              <li>Tydligare visuell hierarki mellan program</li>
-              <li>Förbättrad visuell särskiljning i komplexa vyer</li>
-              <li>Mer sammanhållen och balanserad färgpalett</li>
+              <li>Clearer visual hierarchy between programs</li>
+              <li>Improved visual differentiation in complex views</li>
+              <li>A more cohesive and balanced colour palette</li>
               <li>
-                Minskad visuell belastning, vilket gör det enklare att orientera
-                sig och välja program
+                Reduced visual load, making it easier to navigate and choose a
+                program
               </li>
-              <li>Mer konsekvent visuell struktur i hela appen</li>
+              <li>More consistent visual structure across the app</li>
             </ul>
 
             <p>
-              Resultatet blev ett mer sammanhållet system där program både kan
-              särskiljas tydligt och samtidigt upplevas som en del av samma
-              produkt.
+              The result was a more cohesive system where programs can be clearly
+              distinguished while still feeling like part of the same product.
             </p>
 
-            <h2>Reflektion</h2>
+            <h2>Reflection</h2>
 
             <p>
-              Små justeringar i mättnad, ljusvärde och kontrast hade större
-              påverkan på användbarheten än själva färgvalet, som främst
-              styrdes av produktens visuella identitet.
+              Small adjustments in saturation, lightness and contrast had a
+              greater impact on usability than the colour choices themselves,
+              which were primarily guided by the product’s visual identity.
             </p>
 
             <p>
-              Projektet visade hur små förändringar i färg kan ha stor påverkan
-              på både tydlighet och känsla i en produkt. Färgsystemet fungerar
-              nu som en stabil grund som kan vidareutvecklas i takt med att
-              produkten växer.
+              The project showed how small changes in colour can have a large
+              impact on both clarity and feeling in a product. The colour system
+              now works as a stable foundation that can continue to evolve as the
+              product grows.
             </p>
 
             <div className="button_center">
               <Link to="/">
-                <button>Tillbaka Hem</button>
+                <button>Back Home</button>
               </Link>
             </div>
           </div>

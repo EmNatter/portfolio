@@ -6,15 +6,15 @@ const Header = ({ links }) => {
   const location = useLocation();
 
   return (
-    <nav className="navbar">
-      {location.pathname !== "/about" && <img src={flowerImg} alt="flower" />}
-      <HamburgerMenu links={links} />
-      <h1>Emilia Nätters Portfolio</h1>
-      <h2 className="handwritten">
-        UX Designer | UX Researcher |<br />
-        Visuell design & Frontend
-      </h2>
-    </nav>
+ <nav className="navbar">
+  {location.pathname !== "/about" && <img src={flowerImg} alt="flower" />}
+  <HamburgerMenu links={links} />
+  <h1>Emilia Nätter’s Portfolio</h1>
+  <h2 className="handwritten">
+    UX Designer | UX Researcher |<br />
+    Visual Design & Frontend
+  </h2>
+</nav>
   );
 };
 

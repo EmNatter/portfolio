@@ -439,10 +439,8 @@ footer .icon img {
 }
 .arrow-icon {
   position: absolute;
-  bottom: 2.8rem;
-  right: -22rem;
-  width: 24px;
-  height: 24px;
+    bottom: 105%;
+    right: -800%;
   object-fit: contain;
 }
 
@@ -938,13 +936,13 @@ footer .icon img {
   body {
     font-size: 12px;
   }
-
+  
   .card {
     width: 250px;
   }
   .arrow-icon {
-    bottom: 2.8rem;
-    right: -17rem;
+    bottom: 95%;
+    right: -590%;
   }
   .cv h2 {
     font-size: 1.8rem;

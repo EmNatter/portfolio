@@ -6,7 +6,7 @@ const Webshop = () => {
     <div>
       <main>
         <section className="projectexample_wrapper">
-          <div class="projectexample_card">
+          <div className="projectexample_card">
             <a
               href="https://group5webshop.netlify.app/"
               target="_blank"
@@ -14,82 +14,97 @@ const Webshop = () => {
             >
               <img src={webshopImg} alt="webshop" className="webshop-img" />
             </a>
+
             <h2>
               <ul className="list-clean">
                 <li>
-                  <strong>Tid för genomförande:</strong> 10 veckor
+                  <strong>Time frame:</strong> 10 weeks
                 </li>
                 <li>
-                  <strong>Roll:</strong> Frontend med UX/UI-design
+                  <strong>Role:</strong> Frontend with UX/UI Design
                 </li>
               </ul>
             </h2>
 
-            <h1>E-handelsapp i Vite</h1>
+            <h1>E-commerce App in Vite</h1>
+
             <p>
               <a
                 href="https://group5webshop.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project-link"
+                className="project-link"
               >
-                Besök projektet här
-                <span class="arrow">→</span>
+                Visit the project here
+                <span className="arrow">→</span>
               </a>
             </p>
+
             <p>
-              I denna uppgift skapade vi i teamet en e-handelsapplikation som
-              kombinerar frontendutveckling i React/Vite med tydlig
-              UX/UI-design. Projektet utmanade oss att bygga en komplett
-              shoppingupplevelse, från produktvisning till orderbekräftelse.
+              In this assignment, our team created an e-commerce application
+              that combines frontend development in React/Vite with clear UX/UI
+              design. The project challenged us to build a complete shopping
+              experience, from product display to order confirmation.
             </p>
+
             <ul className="list-clean">
               <li className="text-span">
-                <span>Produktlista:</span> Användaren kan se en lista med
-                produkter, som hämtas från ett externt API.
+                <span>Product list:</span> The user can view a list of products
+                fetched from an external API.
               </li>
+
               <li className="text-span">
-                <span>Produktsida:</span> Klicka på en produkt för att se
-                detaljerad information.
+                <span>Product page:</span> The user can click on a product to
+                view detailed information.
               </li>
+
               <li className="text-span">
-                <span>Kundvagn:</span> Möjlighet att lägga till produkter och
-                genomföra ett köp (utan betalningsimplementation).
+                <span>Shopping cart:</span> The user can add products and
+                complete a purchase without payment implementation.
               </li>
+
               <li className="text-span">
-                <span>Orderbekräftelse:</span> Efter köp visas en enkel
-                orderbekräftelse.
+                <span>Order confirmation:</span> After purchase, a simple order
+                confirmation is displayed.
               </li>
             </ul>
+
             <p>
-              Vi använde react-router-dom för att skapa en tydlig och
-              användarvänlig navigering. Applikationen består av funktionella
-              komponenter skrivna med arrow-functions och export default. All
-              kod är uppdelad i separata filer för en logisk struktur.
+              We used react-router-dom to create clear and user-friendly
+              navigation. The application consists of functional components
+              written with arrow functions and export default. All code is
+              divided into separate files to create a logical structure.
             </p>
-            <h2>Design och layout</h2>
+
+            <h2>Design and Layout</h2>
+
             <p>
-              Applikationen är designad i Figma där vi skapade wireframes och
-              mockups. Fokus låg på att bygga en enhetlig och responsiv layout
-              som fungerar på både mobil och desktop.
+              The application was designed in Figma, where we created wireframes
+              and mockups. The focus was on building a consistent and responsive
+              layout that works on both mobile and desktop.
             </p>
-            <h2>Samarbete och versionshantering</h2>
+
+            <h2>Collaboration and Version Control</h2>
+
             <p>
-              Projektet versionshanterades med Git och finns på GitHub. Eftersom
-              vi jobbade i grupp lärde vi oss att hantera kodbasen tillsammans
-              och att arbeta smidigt, trots att vi inte alltid befann oss på
-              samma plats. Utöver min del av skrivande av kod tog en aktiv och
-              drivande roll i projektledandet och hjälpte till att hålla en
-              tydlig struktur i filerna och i vårt arbetsflöde.
+              The project was version controlled with Git and is available on
+              GitHub. Since we worked as a group, we learned how to manage the
+              codebase together and work smoothly, even when we were not always
+              in the same place. In addition to my part in writing code, I took
+              an active and driving role in project coordination and helped keep
+              a clear structure in the files and in our workflow.
             </p>
-            <h2>Kodkvalitet</h2>
+
+            <h2>Code Quality</h2>
+
             <p>
-              Koden är formaterad med Prettier för att säkerställa konsekvent
-              och läsbar kod.
+              The code is formatted with Prettier to ensure consistent and
+              readable code.
             </p>
+
             <div className="button_center">
               <Link to="/">
-                <button>Tillbaka hem</button>
+                <button>Back Home</button>
               </Link>
             </div>
           </div>

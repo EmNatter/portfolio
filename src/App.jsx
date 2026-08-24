@@ -6,17 +6,18 @@ import About from "./Pages/About.jsx";
 import Project from "./Pages/Project.jsx";
 import Webshop from "./Pages/webshop.jsx";
 import Redesign from "./Pages/Redesign.jsx";
+import DarkMode from "./Pages/DarkMode.jsx";
 import NotFoundPage from "./Pages/NotFoundPage.jsx";
 import Footer from "./Components/Footer.jsx";
 
 const App = () => {
   const navlinks = [
-    { name: "HEM", url: "/" },
+    { name: "HOME", url: "/" },
     {
-      name: "KONTAKT",
-      url: "mailto:natteremilia@gmail.com?subject=Portfolio%20Kontakt&body=Hej%20Emilia,%0D%0A%0D%0AJag%20vill%20komma%20i%20kontakt%20med%20dig%20ang%C3%A5ende...",
+      name: "CONTACT",
+      url: "mailto:natteremilia@gmail.com?subject=Portfolio%20Contact&body=Hi%20Emilia,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you%20regarding...",
     },
-    { name: "OM MIG", url: "/about" },
+    { name: "ABOUT", url: "/about" },
   ];
 
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/project" element={<Project />} />
           <Route path="/webshop" element={<Webshop />} />
           <Route path="/redesign" element={<Redesign />} />
+          <Route path="/darkmode" element={<DarkMode />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

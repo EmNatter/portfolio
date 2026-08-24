@@ -10,7 +10,7 @@ import webshopImg from "../IMG/Webshop.png";
 import redesignImg from "../IMG/Redesign.png";
 import darkmodeImg from "../IMG/DarkMode.png";
 
-const Index = ({ heading = "Välkommen till min portfolio!" }) => {
+const Index = ({ heading = "Welcome to my portfolio!" }) => {
   const wrapperRef = useRef(null);
   const introRef = useRef(null);
 
@@ -71,58 +71,56 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
     return () => observer.disconnect();
   }, []);
 
-  const cards = [
-     {
-      img: redesignImg,
-      title: "Domira 2.0 - UI/UX-design",
-      subtitle: "Teman i balans",
-      link: "/redesign",
-    },
-    {
-      img: darkmodeImg,
-      title: "Kommer snart!",
-      subtitle: "Mellan ljus & mörker",
-      link: null,
-      hideArrow: true,
-    },
-    {
-      img: todoImg,
-      title: "Frontend/React",
-      subtitle: "Todo-app",
-      link: "/project",
-    },
-    {
-      img: webshopImg,
-      title: "Frontend/React och UX/UI-design",
-      subtitle: "Webshop",
-      link: "/webshop",
-    },
-     {
-      img: redesignImg,
-      title: "Domira 2.0 - UI/UX-design",
-      subtitle: "Teman i balans",
-      link: "/redesign",
-    },
-    {
-      img: darkmodeImg,
-      title: "Kommer snart!",
-      subtitle: "Mellan ljus & mörker",
-      link: null,
-      hideArrow: true,
-    },
-    {
-      img: todoImg,
-      title: "Frontendutveckling/React",
-      subtitle: "TODO-app",
-      link: "/project",
-    },
-    {
-      img: webshopImg,
-      title: "Frontendutveckling/React",
-      subtitle: "Webshop",
-      link: "/webshop",
-    },
-  ];
+const cards = [
+  {
+    img: redesignImg,
+    title: "Domira 2.0 - UI/UX Design",
+    subtitle: "Balancing Program Themes",
+    link: "/redesign",
+  },
+  {
+    img: darkmodeImg,
+    title: "Domira 2.0 - UI/UX Design",
+    subtitle: "Between Light & Dark",
+    link: "/darkmode",
+  },
+  {
+    img: todoImg,
+    title: "Frontend / React",
+    subtitle: "Todo App",
+    link: "/project",
+  },
+  {
+    img: webshopImg,
+    title: "Frontend / React and UX/UI Design",
+    subtitle: "Webshop",
+    link: "/webshop",
+  },
+  {
+    img: redesignImg,
+    title: "Domira 2.0 - UI/UX Design",
+    subtitle: "Balancing Program Themes",
+    link: "/redesign",
+  },
+  {
+    img: darkmodeImg,
+    title: "Domira 2.0 - UI/UX Design",
+    subtitle: "Between Light & Dark",
+    link: "/darkmode",
+  },
+  {
+    img: todoImg,
+    title: "Frontend Development / React",
+    subtitle: "Todo App",
+    link: "/project",
+  },
+  {
+    img: webshopImg,
+    title: "Frontend Development / React",
+    subtitle: "Webshop",
+    link: "/webshop",
+  },
+];
 
   return (
     <div className="content">
@@ -132,73 +130,71 @@ const Index = ({ heading = "Välkommen till min portfolio!" }) => {
           className={`home_intro ${introVisible ? "visible" : ""}`}
         >
           <h2>{heading}</h2>
+<div className="home_intro_wrapper">
+  <p className="intro_lead">
+    Here, I have gathered a selection of projects I have worked on, both
+    independently and together with others.
+  </p>
 
-          <div className="home_intro_wrapper">
-            <p className="intro_lead">
-              Här har jag samlat ett urval av projekt jag arbetat med, både
-              självständigt och tillsammans med andra.
-            </p>
+  <p className="intro_body">
+    The projects show how I work with UX/UI design, problem-solving and frontend
+    development to create user-friendly and thoughtful digital solutions.
+  </p>
 
-            <p className="intro_body">
-              Projekten visar hur jag arbetar med UX/UI-design, problemlösning
-              och frontendutveckling för att skapa användarvänliga och
-              genomtänkta digitala lösningar.
-            </p>
+  <p className="intro_body">
+    If you want to learn more about me, my strengths and my experience, you can
+    read more on the{" "}
+    <Link to="/about" className="inline_link">
+      About Me
+    </Link>{" "}
+    page.
+  </p>
+</div>
 
-            <p className="intro_body">
-              Vill du veta mer om mig, mina styrkor och mina erfarenheter kan du
-              läsa mer på sidan{" "}
-              <Link to="/about" className="inline_link">
-                Om mig
-              </Link>
-              .
-            </p>
-          </div>
+<div className="home_contact">
+  <div className="home_contact_email">
+    <h3>Contact</h3>
+    <p>
+      Email:{" "}
+      <a href="mailto:natteremilia@gmail.com">
+        natteremilia@gmail.com
+      </a>
+    </p>
+  </div>
 
-          <div className="home_contact">
-            <div className="home_contact_email">
-              <h3>Kontakt</h3>
-              <p>
-                E-post:{" "}
-                <a href="mailto:natteremilia@gmail.com">
-                  natteremilia@gmail.com
-                </a>
-              </p>
-            </div>
-
-            <div className="contact_links">
-              <h3>Hittar mig även här</h3>
-              <ul className="social-links">
-                <li>
-                  <a
-                    href="https://github.com/EmNatter"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={githubIcon} alt="GitHub" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/em_natt/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={instagramIcon} alt="Instagram" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={linkedinIcon} alt="LinkedIn" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <div className="contact_links">
+    <h3>You can also find me here</h3>
+    <ul className="social-links">
+      <li>
+        <a
+          href="https://github.com/EmNatter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={githubIcon} alt="GitHub" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/em_natt/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={instagramIcon} alt="Instagram" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={linkedinIcon} alt="LinkedIn" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
         </section>
 
         <section
